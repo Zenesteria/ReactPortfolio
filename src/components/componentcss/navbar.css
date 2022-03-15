@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none !important;
 }
 .logo{
     width: 3rem;
@@ -29,11 +30,12 @@
 .nav-item{
     letter-spacing: 0.5rem;
     height: 100%;
-    transition:all 0.2s ease;
+    transition:all 0.8s ease;
 }
 
-.nav-item:hover{
-    border-bottom: 2px solid palevioletred;
+.mainLink:hover{
+    color: black;
+    transform: scale(1.05);
 }
 
 .contactWrapper{
@@ -42,13 +44,26 @@
 .contactLink{
     margin-left: auto !important;
     width: fit-content;
-    border: 2px solid black;
+    border: 1px solid rgb(92, 92, 92) !important;
+    padding: 0 1rem;
     display: flex;
-    font-size: calc(12px + 0.2vw);
-    letter-spacing: 0.25rem !important;
-    font-weight: bold;
+    font-size: calc(14px + 0.2vw);
+    word-spacing: 0.5rem;
+    letter-spacing: 0 !important;
+    font-weight: 600 !important;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
+    transition: all 1s ease;
 
+}
+
+.contactLink:hover{
+    background-color: palevioletred;
+    color: white !important;
+    border: none !important;
+}
+
+.contactLink:hover > a{
+    color: white !important;
 }
