@@ -1,0 +1,54 @@
+.navbar{
+    display: flex !important;
+    justify-content:center!important;
+    font-family: 'Raleway',sans-serif !important;
+}
+.navbar-brand{
+    margin: 0 auto;
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 3rem;
+}
+.navbar-nav{
+    margin: 0 auto !important;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active{
+    border-bottom: 2px solid palevioletred;
+}
+
+
+
+.nav-item{
+    letter-spacing: 0.5rem;
+    height: 100%;
+    transition:all 0.2s ease;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid palevioletred;
+}
+
+.contactWrapper{
+    flex: 0.5;
+}
+.contactLink{
+    margin-left: auto !important;
+    width: fit-content;
+    border: 2px solid black;
+    display: flex;
+    font-size: calc(12px + 0.2vw);
+    letter-spacing: 0.25rem !important;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+
+}
