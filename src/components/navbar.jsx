@@ -18,10 +18,10 @@ function NavBar(){
                         <NavLink className="nav-link" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item mainLink">
-                        <NavLink className="nav-link" to="/about">About</NavLink>
+                        <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
                     </li>
                     <li className="nav-item mainLink">
-                        <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+                        <NavLink className="nav-link" to="/about">About</NavLink>
                     </li>
                     <div className="contactWrapper">
                         <li className="nav-item contactLink">

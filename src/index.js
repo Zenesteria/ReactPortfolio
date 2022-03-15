@@ -5,6 +5,7 @@ import App from './components/App';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Footer from './components/Footer';
+import Portfolio from './components/Portfolio';
 
 ReactDOM.render(
   <Router>
@@ -12,6 +13,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<App/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path="/portfolio" element={<Portfolio/>}/>
       </Routes>
       <Footer/>
   </Router>,
