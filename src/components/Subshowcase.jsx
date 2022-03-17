@@ -7,13 +7,13 @@ function Subshowcase(){
         <div className="subShowcase">
             <div className="subSectionWrapper">
                 <div className="subSection topSection">
-                    <div className="subStatData plumData">
-                        <div className="dataTitle plumDataTitle"><p>0</p></div>
+                    <div className="subStatData">
+                        <div className="dataTitle"><p>0</p></div>
                         <h3>Jobs Done Successfully.</h3>
                     </div>
 
-                    <div className="subStatData blueData">
-                        <div className="dataTitle blueDataTitle"><p>0</p></div>
+                    <div className="subStatData">
+                        <div className="dataTitle"><p>0</p></div>
                     </div>
                 </div>
 

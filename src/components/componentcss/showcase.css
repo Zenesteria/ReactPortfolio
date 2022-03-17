@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.5s ease !important;
+}
+
+:root{
+    --accent: purple;
 }
 
 .main{
@@ -11,16 +16,16 @@
 
 
 .showCase{
+    position: relative;
     width: 100%;
-    height: fit-content;
-    min-height: 100vh;
+    height: 91vh;
     display: flex;
     flex-wrap: wrap;
-    background: url(/public/img/backdrop4.png);
+    background: url(/public/img/backdrop.png);
     font-family: 'Raleway',sans-serif !important;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
 
 
@@ -60,14 +65,21 @@
 }
 
 .leftShowcase .btn-primary{
-    background-color: #d87093 !important;
-    border: none;
+    background-color:transparent !important;
+    border: 2px solid white;
+    border-radius: 20px;
     width: fit-content;
-    padding: 1rem;
+    padding: 1rem 2rem;
     font-weight: bold;
     font-family: 'Raleway',sans-serif;
     letter-spacing: 0.2rem;
     font-size: calc(14px + 0.2vw);
+}
+
+.leftShowcase .btn-primary:hover{
+    background-color: var(--accent) !important;
+    border: 2px solid transparent !important;
+    
 }
 
 .leftShowcase .btn-primary:active{
@@ -85,26 +97,46 @@
     padding: 1rem;
     display: flex;
 }
+.socials a{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+    border: 2px solid white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 .socials i{
     font-size: calc(20px + 0.2vw);
-    margin: 1rem;
-    border: 2px solid palevioletred;
-    color: palevioletred;
+    color: rgb(255, 255, 255);
+    border: none !important;
     border-radius: 50%;
-    padding: 0.5rem;
 }
 
-.leftShowcase .shapeAccent{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 50%;
-    height: 50%;
-    width: 50%;
-    background: rgb(255,230,239);
-    background: linear-gradient(234deg, rgba(255,230,239,1) 1%, rgba(216,112,147,1) 100%);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+.socials a:hover{
+    border: 2px solid transparent !important;
+    background-color: var(--accent);
 }
+
+.arrow {
+    border: solid var(--accent);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    position: absolute;
+    bottom: 10px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
 
 .rightShowcase{
     flex: 1;
@@ -123,14 +155,3 @@
     object-fit: cover;
 }
 
-.rightShowcase .shapeAccent{
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: palevioletred;
-    clip-path: ellipse(46% 27% at 51% 56%);
-    transform: rotate(-30deg);
-}

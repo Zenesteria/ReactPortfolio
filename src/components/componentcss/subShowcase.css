@@ -1,3 +1,6 @@
+:root{
+    --accent:purple;
+}
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
 .subShowcase{
     position: relative;
@@ -56,18 +59,13 @@
     justify-content: center;
     padding: 0.5rem;
     margin: 1rem 0;
+    border-right:10px solid var(--accent);
+    border-left:10px solid var(--accent);
+    border-bottom:10px solid var(--accent);
 }
 
-.plumData{
-    border-right:10px solid rgba(216, 112, 147, 0.479);
-    border-left:10px solid rgba(216, 112, 147, 0.479);
-    border-bottom:20px solid rgba(216, 112, 147, 0.479);
-}
-.blueData{
-    border-right:10px solid powderblue;
-    border-left:10px solid powderblue;
-    border-bottom:20px solid powderblue;
-}
+
+
 .subStatData h3{
     font-family: 'Raleway',sans-serif !important;
     font-weight: 200;
@@ -85,6 +83,8 @@
     height: 70px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
+    border-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent);
 }
 
 .dataTitle p{
@@ -95,8 +95,6 @@
 }
 
 .plumDataTitle{
-    border-color: palevioletred;
-    box-shadow: 0 0 10px palevioletred;
 }
 .blueDataTitle{
     border-color: powderblue;
@@ -122,23 +120,33 @@
     font-size: calc(14px + 0.2vw);
 }
 .midSection h1 span{
-    color: palevioletred;
+    color: var(--accent);
     font-weight: 600;
 }
 
 .midSection .btn-primary{
-    background-color: palevioletred;
+    background-color: var(--accent);
     width: fit-content;
     border: none;
     padding: 1rem;
 }
 
+.midSection .btn-primary:hover{
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    background-color: var(--accent) !important;
+}
+
+.midSection .btn-primary:focus{
+    box-shadow: none !important;
+}
+
 .bottomSection{
-    background: rgb(216,112,147);
-    background: radial-gradient(circle, rgba(216,112,147,1) 0%, rgb(126, 96, 118) 100%);
     border-radius: 20px;
     align-items: center;
     flex-direction: column;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
 }
 
 .bottomSection .wrapper{
@@ -148,7 +156,7 @@
     justify-content: center;
     align-items: center;
     height: fit-content;
-    color: white;
+    color: var(--accent) !important;
 }
 
 

@@ -1,3 +1,8 @@
+:root{
+  --accent:purple;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -9,5 +14,74 @@
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
+    }
+  }
+
+  .portfolioHeader{
+    /* background-color: antiquewhite !important; */
+    background: url(/public/img/bannerBackdrop.png) !important;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    color: var(--accent) !important;
+    font-family: 'Raleway' , sans-serif !important;
+  }
+
+  .portfolioHeader h1{
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: var(--accent);
+    /* animation: colorChange 2s ease 1s; */
+  }
+
+  .card .content-scroll{
+    position: absolute;
+    width: 100%;
+    height: 28vh;
+    /* min-height: 250px; */
+    overflow: hidden;
+  }
+
+  .card .content-scroll .display-preview{
+    width: 100%;
+    background: url(/public/img/pageslide1.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 600px;
+    transition:all 2s linear !important;
+  }
+
+  .card .content-scroll .display-preview:hover{
+    transition: all 10s linear !important;
+    transform: translateY(-375px);
+  }
+
+
+  .album .card-body{
+    z-index: 10;
+  }
+  .album .card-body p > span{
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .album .card-body .portBtn{
+    border: 0.5px solid var(--accent);
+    font-size: calc(0.2rem + 1vw);
+  }
+  .album .card-body .portBtn:focus{
+    box-shadow: none !important;
+  } 
+  .album .card-body .portBtn:hover{
+    border: 0.5px solid transparent;
+    color:  white;
+    background-color: var(--accent);
+  }
+  @keyframes colorChange {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
     }
   }

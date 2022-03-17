@@ -17,10 +17,12 @@ function Showcase(){
                 </div>
 
                 <div className="socials">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-discord"></i>
-                    <i class="fa-brands fa-github"></i>
+                    <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="/"><i class="fa-brands fa-discord"></i></a>
+                    <a href="/"><i class="fa-brands fa-github"></i></a>
                 </div>
+
+                <i class="arrow down"></i>
             </div>
 
         </div>
