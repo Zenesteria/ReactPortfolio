@@ -7,6 +7,7 @@ import "./componentcss/About.css";
 function About(){
     return(
         <div className="about">
+            <div className="aboutBackdrop"></div>
             <div className="about-top">
                 <div className="portrait"></div>
                 <div className="about-wrapper">
