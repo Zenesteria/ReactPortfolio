@@ -1,0 +1,135 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    min-height: 90vh;
+    padding: 2rem;
+}
+.contact-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1080px;
+    min-width: 330px;
+    margin: 3rem 0;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 1rem;
+    min-height: 70vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 20px rgba(66, 66, 66, 0.199);
+}
+
+.contact-left{
+    flex: 0.6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 330px;
+}
+
+.contact-details{
+    list-style: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 30vh;
+    margin: 2rem 0 auto 0 !important;
+}
+
+.contact-details li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-details li > p{
+    margin-bottom: 0 !important;
+    margin: 0 1rem;
+}
+
+.contact-socials{
+    display: flex;
+    list-style: none;
+    margin: auto 0 0 0;
+}
+
+.contact-socials li{
+    margin: 1rem;
+}
+
+.contact-right{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    flex: 1;
+    /* padding: 2rem; */
+    /* min-width: 330px; */
+}
+
+.contactForm{
+    height: fit-content;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    min-width: 300px;
+    align-items: center;
+
+}
+
+.contactForm form{
+    width: 100% !important;
+    min-width: 300px;
+}
+
+.contactForm div{
+    margin: 3rem 0;
+}
+
+.contactForm input{
+    border: none;
+    border-bottom: 2px solid palevioletred;
+} 
+
+.contactForm textarea{
+    border: none;
+    border-bottom: 2px solid palevioletred;
+    max-height: 100px;
+}
+
+.contactForm textarea:focus{
+    border: 2px solid rgba(216, 112, 147, 0.363);
+    box-shadow: 0px 0px 10px rgba(216, 112, 147, 0.418);
+}
+.contactForm input:focus{
+    border-bottom: 2px solid rgba(216, 112, 147, 0.336);
+    box-shadow: 0px 0px 10px rgba(216, 112, 147, 0.418);
+}
+
+.contactForm .btn-primary{
+    background-color: palevioletred;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 3rem;
+    padding:1rem 2rem;
+    color: white;
+    border: none;
+    font-size: calc(10px + 0.2vw);
+}
+
+
+
+

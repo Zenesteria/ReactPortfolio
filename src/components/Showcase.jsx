@@ -18,16 +18,11 @@ function Showcase(){
 
                 <div className="socials">
                     <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-discord"></i>
                     <i class="fa-brands fa-github"></i>
                 </div>
+            </div>
 
-                <div className="shapeAccent"></div>
-            </div>
-            <div className="rightShowcase">
-                <img src="/img/profilenobg.png" alt="" className="rightImg" />
-                <div className="shapeAccent"></div>
-            </div>
         </div>
     )
 }

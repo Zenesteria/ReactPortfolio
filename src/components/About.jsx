@@ -3,11 +3,12 @@ import React from "react";
 import "./componentcss/About.css";
 
 
+
 function About(){
     return(
         <div className="about">
             <div className="about-top">
-                <img src="/img/aboutpic.jpg" alt="Abdurrahman Aderinto" />
+                <div className="portrait"></div>
                 <div className="about-wrapper">
                     <h1>Hello there!</h1>
                     <p>

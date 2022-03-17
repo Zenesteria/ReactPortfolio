@@ -9,36 +9,51 @@
     position: relative;
 }
 
+
 .showCase{
     width: 100%;
-    height: 90vh;
+    height: fit-content;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    background: url(/public/img/backdrop4.png);
     font-family: 'Raleway',sans-serif !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+
 .leftShowcase{
-    flex:0.6;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2rem 5rem;
+    align-items: center;
+    text-align: center;
+    padding: calc(0.5rem + 5vw) calc(0.5rem + 5vw);
     position: relative;
     overflow: hidden;
+    min-width: 360px;
 }
 .topWrapper{
     margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 .leftShowcase h1{
-    font-size: calc(60px + 0.2vw);
+    font-size: calc(32px + 3vw);
     font-family: 'Raleway',sans-serif !important;
     font-weight: 600;
+    width: fit-content;
 }
 
 .leftShowcase p{
     max-width: 500px;
-    margin: 2rem 0;
     font-weight: 300;
     font-family: 'Raleway',sans-serif;
     font-weight: 500;
@@ -47,7 +62,7 @@
 .leftShowcase .btn-primary{
     background-color: #d87093 !important;
     border: none;
-    width: 40%;
+    width: fit-content;
     padding: 1rem;
     font-weight: bold;
     font-family: 'Raleway',sans-serif;
@@ -94,9 +109,12 @@
 .rightShowcase{
     flex: 1;
     height: 100%;
+    min-height: 90vh;
+    min-width: 360px;
     display: flex;
     overflow: hidden;
     position: relative;
+    background-color: #d87093;
 }
 
 .rightImg{
