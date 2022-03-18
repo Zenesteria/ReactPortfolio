@@ -2,20 +2,22 @@ import React from "react";
 import Card from "../sub-components/CardOne"
 import "../css-components/subShowcase.css"
 import skillSets from "../component-data/skillSets";
+import portfolioData from "../component-data/datashowcase"
+import DataShowcase from "./DataShowcase";
 
 function Subshowcase(){
     return(
         <div className="subShowcase">
             <div className="subSectionWrapper">
                 <div className="subSection topSection">
-                    <div className="subStatData">
-                        <div className="dataTitle"><p>0</p></div>
-                        <h3>Jobs Done Successfully.</h3>
-                    </div>
-
-                    <div className="subStatData">
-                        <div className="dataTitle"><p>0</p></div>
-                    </div>
+                    {portfolioData.map((data) => {
+                        return(
+                            <DataShowcase 
+                                value = {data.value}
+                                subTitle = {data.content}
+                            />
+                        )
+                    })}
                 </div>
 
                 <div className="subSection midSection">
@@ -24,9 +26,9 @@ function Subshowcase(){
                         Everyday
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, rerum!
+                        Tinkering with ideas, rebuilding simplistic concepts and critical thinking fed into a day's work
                     </p>
-                    <a class="btn btn-primary" href="/" role="button">Download Resume</a>
+                    <a class="btn btn-primary" href="./documents/resume.docx" role="button" download>Download Resume</a>
                 </div>
                 <div className="subSection bottomSection">
                     <div className="wrapper">
