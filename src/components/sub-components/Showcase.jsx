@@ -14,7 +14,7 @@ function Showcase(){
                         Lorem ipsum dolor sit amet consectetur, 
                         adipisicing elit. Reprehenderit, placeat.
                     </p>
-                    <a class="btn btn-primary" href="/" role="button">Official Site</a>
+                    <a class="btn btn-primary" href="/" role="button">Learn More.</a>
                 </div>
                 
                 <div className="socials">
