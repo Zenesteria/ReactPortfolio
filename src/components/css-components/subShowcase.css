@@ -1,6 +1,11 @@
 :root{
     --accent:purple;
 }
+.main{
+    
+    /* background-color: #f3eefd; */
+    background: linear-gradient(0deg, rgba(243,238,253,0) 0%, rgba(243,238,253,1) 48%, rgba(255,255,255,0.5) 100%);
+}
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
 .subShowcase{
     position: relative;
@@ -48,19 +53,19 @@
 }
 
 .subStatData{
+    background-color: rgba(219, 199, 223, 0.192);
     position: relative;
     width: 70%;
     min-width: 300px;
-    height: 15vh;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    height: fit-content;
+    min-height: 200px;
+    border-radius: 20px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 0.5rem;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    padding: 2rem;
     margin: 1rem 0;
-    border-right:10px solid var(--accent);
-    border-left:10px solid var(--accent);
     border-bottom:10px solid var(--accent);
 }
 
@@ -70,7 +75,6 @@
     font-family: 'Raleway',sans-serif !important;
     font-weight: 200;
     font-size: calc(1.2rem + 0.2vw);
-    margin: auto 0 0.5rem 0 !important;
     max-width: 220px;
     display: flex;
     align-items: center;
@@ -79,12 +83,10 @@
 }
 
 .dataTitle{
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -40%;
-    left: 38%;
+    margin: 1rem;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -150,8 +152,7 @@
     border-radius: 20px;
     align-items: center;
     flex-direction: column;
-    border: 2px solid var(--accent);
-    border-radius: 10px;
+    padding: 5rem 1rem !important;
 }
 
 .bottomSection .wrapper{
