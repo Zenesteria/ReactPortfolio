@@ -1,0 +1,12 @@
+{portfolioData.map((data) => {
+    return(
+        <div className="col">
+            <PortfolioCard
+                id={data.id}
+                portfolioPreview={data.cardPreview}
+                title={data.cardTitle}
+                content={data.cardContent}
+                dateCreated={data.cardDateOfCreation}
+            />
+        </div>)
+})}

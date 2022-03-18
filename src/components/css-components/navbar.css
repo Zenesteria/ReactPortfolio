@@ -1,0 +1,80 @@
+:root{
+    --accent:purple;
+}
+
+.navbar{
+    display: flex !important;
+    justify-content:center!important;
+    font-family: 'Raleway',sans-serif !important;
+}
+.navbar-brand{
+    margin: 0 auto !important;
+    flex: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+}
+.logo{
+    width: 3rem;
+}
+.navbar-nav{
+    margin: 0 auto !important;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active{
+    border-bottom: 2px solid var(--accent);
+}
+
+
+
+.nav-item{
+    letter-spacing: 0.5rem;
+    height: 100%;
+    margin: 0.2vw 0;
+}
+
+.mainLink:hover{
+    color: black;
+    transform: scale(1.05);
+    transition:all 0.8s ease;
+}
+
+.contactWrapper{
+    flex: 0.5;
+}
+.contactLink{
+    width: 100%;
+    border: 1px solid rgb(92, 92, 92) !important;
+    padding: 0.5rem 1rem;
+    display: flex;
+    font-size: calc(14px + 0.2vw);
+    word-spacing: 0.5rem;
+    letter-spacing: 0 !important;
+    font-weight: 600 !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: background-color .5s ease !important;
+    text-align: center;
+    text-decoration: none;
+    color:rgba(0, 0, 0, .55);
+}
+.contactLink i{
+    width: fit-content;
+    height: 100%;
+}
+
+.contactLink:hover{
+    background-color: var(--accent);
+    color: white !important;
+    text-decoration: none;
+    border: 2px solid transparent !important;
+}
+
+.contactLink:hover > a{
+    color: white !important;
+}
