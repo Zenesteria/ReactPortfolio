@@ -1,5 +1,6 @@
 import React from "react";
 import "../css-components/showcase.css"
+import { NavLink } from "react-router-dom";
 import socials from "../component-data/socials.js"
 
 function Showcase(){
@@ -15,7 +16,8 @@ function Showcase(){
                         fourth-year electrical electronics engineering 
                         student at AFIT.
                     </p>
-                    <a class="btn btn-primary" href="/" role="button">Learn More.</a>
+                    <NavLink to="/about"><a class="btn btn-primary" href="/" role="button">Learn More.</a></NavLink>
+                    
                 </div>
                 
                 <div className="socials">

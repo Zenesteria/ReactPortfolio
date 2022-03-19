@@ -15,7 +15,7 @@ function About(){
                 <div className="portrait"></div>
                 <div className="about-wrapper">
                     <h1>{mainData.mainTitle}</h1>
-                    <p>
+                    <p className="aboutContent">
                         {mainData.content1}
                     </p>
                 </div>
@@ -23,7 +23,7 @@ function About(){
             <div className="about-bottom">
                 <div className="about-bottom-left">
                     <h3>{mainData.heading}</h3>
-                    <p>
+                    <p className="aboutContent">
                         {mainData.content2}
                     </p>
                 </div>

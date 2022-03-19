@@ -6,44 +6,43 @@ import portfolioData from "../component-data/datashowcase"
 import DataShowcase from "./DataShowcase";
 
 function Subshowcase(){
+    
+    
     return(
         <div className="subShowcase">
-            <div className="subSectionWrapper">
-                <div className="subSection topSection">
+            <div className="subSection top">
+                <div className="subSectionWrapper left">
                     {portfolioData.map((data) => {
-                        return(
-                            <DataShowcase 
-                                value = {data.value}
-                                subTitle = {data.content}
-                            />
-                        )
+                       return (<DataShowcase
+                            id={data.id}
+                            value={data.value}
+                            content={data.content}
+                        />)
                     })}
                 </div>
-
-                <div className="subSection midSection">
-                    <h1>
-                        Applying <span>Creativity</span> <br />
-                        Everyday
-                    </h1>
+                <div className="subSectionWrapper right">
+                    <h1>Applying <span>Creativity</span> <br /> Everyday</h1>
                     <p>
-                        Tinkering with ideas, rebuilding simplistic concepts and critical thinking fed into a day's work
+                        Tinkering with ideas, rebuilding 
+                        simplistic concepts <br /> and critical
+                        thoughts fed into a day's work
                     </p>
-                    <a class="btn btn-primary" href="./documents/resume.docx" role="button" download>Download Resume</a>
-                </div>
-                <div className="subSection bottomSection">
-                    <div className="wrapper">
-                        <h1>Skillset</h1>
-                    </div>
-                    <div className="cards">
-                        {skillSets.map((skillSet) => {
-                            return (
-                                <Card key={skillSet.id} title={skillSet.cardTitle} subtitle={skillSet.cardSubtitle} content={skillSet.cardContent}/>
-                                )
-                        })}
-                    </div>
+                    <a class="btn" href="./documents/resume.docx" role="button" download>Download Resume</a>
                 </div>
             </div>
-            
+            <div className="subSection skillset">
+                    <h1>Skillset</h1>
+                    <div className="cards">
+                        {skillSets.map((skill) => {
+                            return(
+                                <Card id={skill.id} 
+                                    title={skill.cardTitle} 
+                                    subtitle={skill.cardSubtitle} 
+                                    content={skill.cardContent}
+                                />)
+                        })}
+                    </div>
+            </div>
         </div>
     )
 }

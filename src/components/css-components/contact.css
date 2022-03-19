@@ -1,14 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --accent:purple;
+}
 .contact{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: fit-content;
     min-height: 90vh;
     padding: 2rem;
-    background: url(/public/img/contactBackdrop.png);
+    font-family: 'Raleway',sans-serif;
+    color: var(--accent);
+}
+.contact-backdrop{
+    background: url(/public/img/backdrop.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: blur(5px);
+    opacity: 0.5;
 }
 .contact-header{
     width: 100%;
@@ -18,9 +35,17 @@
     padding: 1rem;
 }
 
+.contact-header h2{
+    font-size: calc(38px + 0.2vw);
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    color: var(--accent);
+}
+
 .contact-content{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 80%;
     max-width: 1080px;
     min-width: 330px;
@@ -31,20 +56,27 @@
     min-height: 70vh;
 }
 
+
 .contact-left{
     position: relative;
     border-radius: 20px;
-    margin-right: 2rem;
+    height: fit-content;
+    margin: 0 2rem;
     flex: 0.6;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     min-width: 330px;
     /* filter: blur(10px); */
-    box-shadow: 0px 0px 30px rgba(225, 159, 255, 0.342);
+    box-shadow: 0px 0px 30px rgba(121, 47, 143, 0.164);
 }
 
-
+.contact-left h3{
+    font-size: calc(24px + 0.2vw);
+}
+.subtext{
+    font-size: calc(14px + 0.2vw);
+}
 
 .contact-details{
     list-style: none;
@@ -62,9 +94,14 @@
     align-items: center;
     justify-content: center;
 }
+.contact-details li i{
+    font-size: calc(20px + 0.2vw);
+    color: var(--accent);
+}
 .contact-details li > p{
     margin-bottom: 0 !important;
-    margin: 0 1rem;
+    margin: 0 2rem;
+    font-size: calc(14px + 0.2vw);
 }
 
 .contact-socials{
@@ -79,6 +116,7 @@
 
 .contact-right{
     display: flex;
+    margin: 0 2rem;
     align-items: center;
     height: fit-content;
     justify-content: center;
@@ -114,34 +152,48 @@
 
 .contactForm input{
     border: none;
-    border-bottom: 2px solid palevioletred;
+    border-bottom: 2px solid var(--accent);
 } 
 
 .contactForm textarea{
     border: none;
-    border-bottom: 2px solid palevioletred;
-    max-height: 100px;
+    border-bottom: 2px solid var(--accent);
+    min-height: 150px;
+    max-height: 250px;
     background-color: transparent !important;
+    box-shadow: 0px 0px 10px rgba(82, 0, 82, 0.384);
 }
 
 .contactForm textarea:focus{
     border: 2px solid rgba(216, 112, 147, 0.363);
-    box-shadow: 0px 0px 10px rgba(216, 112, 147, 0.418);
+    box-shadow: 0px 0px 10px rgba(80, 0, 82, 0.384);
 }
 .contactForm input:focus{
     border-bottom: 2px solid rgba(216, 112, 147, 0.336);
-    box-shadow: 0px 0px 10px rgba(216, 112, 147, 0.418);
+    box-shadow: 0px 0px 10px rgba(82, 0, 82, 0.384);
 }
 
 .contactForm .btn-primary{
-    background-color: palevioletred;
+    border: 2px solid var(--accent);
+    background-color: transparent !important;
     width: fit-content;
     margin-left: auto;
+    margin-right: 0.5rem;
     margin-top: 3rem;
     padding:1rem 2rem;
-    color: white;
+    color: var(--accent);  
+    font-size: calc(12px + 0.2vw);
+}
+
+.contactForm .btn-primary:hover{
+    background-color: var(--accent) !important;
+    color: white !important;
+    border: 2px solid transparent;
+}
+
+.contactForm .btn-primary:focus{
     border: none;
-    font-size: calc(10px + 0.2vw);
+    box-shadow: none;
 }
 
 

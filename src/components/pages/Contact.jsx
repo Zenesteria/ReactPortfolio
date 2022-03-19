@@ -6,36 +6,25 @@ import "../css-components/contact.css"
 function Contact(){
     return(
         <div className="contact">
+            <div className="contact-backdrop"></div>
             <div className="contact-header">
                 <h2>Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Just a Message Away!</p>
             </div>
             <div className="contact-content">
                 <div className="contact-left">
                     <h3>Contact Information</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, in!</p>
+                    <p className="subtext">7 Dunukofia St, Abuja, <br /> <strong>Nigeria</strong></p>
 
                     <ul className="contact-details">
                         <li>
                             <i class="fa-solid fa-phone"></i> <p>+234-7086835637</p>
                         </li>
                         <li>
-                            <i class="fa-solid fa-phone"></i> <p>+234-7086835637</p>
+                            <i class="fa-solid fa-envelope"></i> <p>+234-7086835637</p>
                         </li>
                         <li>
-                            <i class="fa-solid fa-phone"></i> <p>+234-7086835637</p>
-                        </li>
-                    </ul>
-
-                    <ul className="contact-socials">
-                        <li>
-                            <i class="fa-brands fa-twitter"></i>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-twitter"></i>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-whatsapp"></i> <p>+234-7086835637</p>
                         </li>
                     </ul>
                 </div>

@@ -23,7 +23,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(70%);
+    filter: brightness(50%);
 }
 
 .about-top{
@@ -66,7 +66,7 @@
 .about-top .about-wrapper{
     display: flex;
     flex-direction: column;
-    flex: 0.8;
+    flex: 1;
     width: fit-content;
     height: fit-content;
     margin: auto;
@@ -80,10 +80,15 @@
     font-size: calc(60px + 0.2vw);
     font-weight: 600;
 }
-.about-top .about-wrapper p{
-    max-width: 500px;
-    margin: 2rem 0;
+.aboutContent{
+    width: 100%;
+    font-size: calc(0.9rem + 0.2vw);
+    line-height: 2rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
 }
+
 
 
 .about-bottom > .about-bottom-left, .about-bottom-right{
@@ -116,7 +121,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     max-height: 370px;
-    min-height: 200px;
     height: 80%;
     width: 100%;
 }
